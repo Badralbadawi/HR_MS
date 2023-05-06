@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace HR_MS.Model
 {
@@ -13,6 +15,8 @@ namespace HR_MS.Model
     {
         [Key]
         public int ID { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
+        [MaxLength(25)]
 
         [Required]
         public string Name { get; set; }
