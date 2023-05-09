@@ -13,8 +13,7 @@ namespace HR_MS.Model
     {
         [Key]
         public int ID { get; set; }
-        [Column(TypeName = "decimal(18, 2)")]
-        [MaxLength(25)]
+      
         public string Name { get; set; }
         public string describtion { get; set; }
         public string type { get; set; }
