@@ -11,8 +11,9 @@ namespace HR_MS.Model
 {
     public class Salary
     {
+ 
         public int Id { get; set; }
-        [Column(TypeName = "decimal(18, 2)")]
+     
 
         public string type { get; set; }
         public string amt { get; set; }
